@@ -168,9 +168,9 @@ span {
 
 .projects-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .projects-container .projects-box {
@@ -208,9 +208,9 @@ span {
 
 .skills-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que pasen a otra línea si no caben */
+  justify-content: center; /* Centra los cuadros */
+  gap: 20px; /* Espaciado entre cuadros */
 }
 
 .skills-box h2 {
@@ -260,9 +260,8 @@ span {
   font-size: 10px;
 }
 
-.skills-box-container {
-}
 .skills-container .skills-box .skills-box-container {
+  display: grid;
   flex: 1 1 30rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
