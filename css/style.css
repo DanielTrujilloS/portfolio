@@ -216,6 +216,10 @@ span {
 .skills-box h2 {
   color: var(--main-color);
 }
+.skills-box .info-part {
+  font-size: 1.4rem;
+  padding-bottom: 40px;
+}
 
 .skills-container .skills-box {
   flex: 1 1 30rem;
@@ -249,7 +253,7 @@ span {
 
 .skills-box .progress_bar_box .progress_bar .line {
   position: absolute;
-  width: 30%;
+  width: 90%;
   height: 100%;
   background-color: var(--main-color);
   border-radius: 100px;
@@ -260,8 +264,14 @@ span {
   font-size: 10px;
 }
 
-.skills-container .skills-box .skills-box-container {
+.skills-box .skills-part {
+  font-size: 1.4rem;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.skills-box-container {
   flex: 1 1 30rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
@@ -269,4 +279,11 @@ span {
   text-align: center;
   border: 0.2rem solid var(--main-color);
   transition: 0.5s ease;
+}
+.skills-box-container h3 {
+  padding-bottom: 10px;
+}
+
+.skills-box-container p {
+  padding: 4px;
 }
