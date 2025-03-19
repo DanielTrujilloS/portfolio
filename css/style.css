@@ -376,6 +376,7 @@ span {
   border-color: var(--main-color);
   transform: scale(1.32);
 }
+/* CERTIFICATE SECTION */
 
 .certificates {
   background: var(--second-bg-color);
@@ -417,11 +418,15 @@ span {
   font-size: 2.6rem;
   margin: 1rem 0;
 }
-
-.certificate-box p {
-  font-size: 1.6rem;
-  margin: 1rem 0 3rem;
+.certificate-box-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  padding-bottom: 20px;
 }
+
+/* CONTACT SECTION */
 
 .contact-container {
   display: flex;
@@ -452,6 +457,7 @@ span {
 .contact-item i {
   font-size: 3.5rem;
 }
+/* FOOTER SECTION */
 
 .footer {
   background: var(--second-bg-color);
@@ -496,6 +502,7 @@ span {
 }
 
 /* PROJECTS HTML SECTION */
+/* infosection */
 .github-btn {
   display: inline-block;
   padding: 1rem 2.8rem;
