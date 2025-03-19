@@ -600,7 +600,7 @@ span {
 }
 
 .image-box:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   box-shadow: 0 0 1rem var(--main-color);
 }
 
