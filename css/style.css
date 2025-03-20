@@ -388,14 +388,13 @@ span {
 }
 
 .certificate-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
+  justify-content: center;
 }
 
 .certificate-box {
-  flex: 1 1 30rem;
   background: var(--bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
@@ -406,57 +405,84 @@ span {
 
 .certificate-box:hover {
   border-color: var(--text-color);
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .certificate-box i {
-  font-size: 7rem;
+  font-size: 5rem;
   color: var(--main-color);
 }
 
 .certificate-box h3 {
-  font-size: 2.6rem;
+  font-size: 2rem;
   margin: 1rem 0;
 }
 .certificate-box-image img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
   border-radius: 1.5rem;
   padding-bottom: 20px;
 }
 
 /* CONTACT SECTION */
+.contact-section {
+  height: fit-content;
+  padding: 20px;
+}
+
+.headingC {
+  text-align: center;
+  font-size: 4.5rem;
+  padding-bottom: 20px;
+  margin-bottom: 1rem;
+}
 
 .contact-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
 }
 
-.contact-container .contact-item {
+.contact-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--second-bg-color);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   border: 0.2rem solid var(--main-color);
   transition: 0.5s ease;
+  text-align: center;
 }
 
 .contact-item:hover {
   border-color: var(--text-color);
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
-.contact-item p {
+.contact-text {
   font-size: 1.6rem;
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+  color: var(--text-color); /* Color del texto */
+  text-align: center; /* Centra el texto */
+  width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
 }
+
 .contact-item i {
   font-size: 3.5rem;
 }
+
 /* FOOTER SECTION */
 
 .footer {
@@ -619,7 +645,8 @@ span {
 }
 
 .image-description {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-top: 1rem;
   color: var(--text-color);
   margin-bottom: 1rem;
