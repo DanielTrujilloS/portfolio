@@ -29,7 +29,7 @@ body {
 }
 
 section {
-  height: fit-content;
+  min-height: 50vh;
   padding: 10rem 9% 2rem;
 }
 .header {
